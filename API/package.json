@@ -1,0 +1,31 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev --transpile-only --ignore-watch node_modules ./src/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/ads-osorio/controle_estoque.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/ads-osorio/controle_estoque/issues"
+  },
+  "homepage": "https://gitlab.com/ads-osorio/controle_estoque#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.7"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.10",
+    "@types/express": "^4.17.11",
+    "@types/mongoose": "^5.10.5"
+  }
+}

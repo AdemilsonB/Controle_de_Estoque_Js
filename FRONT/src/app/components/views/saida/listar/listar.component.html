@@ -1,0 +1,44 @@
+<h1>Saidas Registradas</h1>
+<div>
+
+<table mat-table [dataSource]="saidas" class="mat-elevation-z8">
+  
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef> # </th>
+      <td mat-cell *matCellDef="let saida"> {{saida._id}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="data_venda">
+        <th mat-header-cell *matHeaderCellDef> Data da Venda: </th>
+        <td mat-cell *matCellDef="let saida"> {{saida.data_venda}} </td>
+      </ng-container>
+
+    <ng-container matColumnDef="produto">
+    <th mat-header-cell *matHeaderCellDef> Produtos: </th>
+    <td mat-cell *matCellDef="let saida"> {{saida.produto}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="quantidade">
+        <th mat-header-cell *matHeaderCellDef> Quantidade: </th>
+        <td mat-cell *matCellDef="let saida"> {{saida.quantidade}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="valor_venda">
+        <th mat-header-cell *matHeaderCellDef> Valor Total>: </th>
+        <td mat-cell *matCellDef="let saida"> {{saida.valor_venda}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="createdAt">
+        <th mat-header-cell *matHeaderCellDef> Criado em: </th>
+        <td mat-cell *matCellDef="let saida"> {{saida.createdAt}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="deletar">
+      <th mat-header-cell *matHeaderCellDef> </th>
+      <td mat-cell *matCellDef="let saida"> <button mat-raised-button color="primary" (click)="delete(saida._id)">Deletar</button> </td>
+  </ng-container>
+         
+    <tr mat-header-row *matHeaderRowDef="saidas"></tr>
+    <tr mat-row *matRowDef="let row; columns: saidas;"></tr>
+  </table>
+</div>

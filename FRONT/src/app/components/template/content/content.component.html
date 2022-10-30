@@ -1,0 +1,61 @@
+<mat-sidenav-container >
+    <mat-sidenav mode="side" opened fixedInViewport="true" fixedTopGap="64">
+        <mat-nav-list >
+            <mat-list-item>
+                <mat-icon class="material-icons-outlined" mat-list-icon>home</mat-icon>
+                <a mat-list-item routerLink="">Home</a>
+            </mat-list-item>
+            <!--ENTRADA-->
+            <mat-list-item>
+                <mat-icon class="material-icons-outlined" mat-list-icon>assignment</mat-icon>
+                <a mat-list-item routerLink="/entrada/cadastrar">Cadastrar entrada  </a>
+            </mat-list-item>
+
+            <mat-list-item>
+            <mat-icon class="material-icons-outlined" mat-list-icon>list</mat-icon>
+                <a mat-list-item routerLink="/entrada/listar">Listar entrada </a>
+            </mat-list-item>
+            
+            <!--FORNECEDOR--->
+            <mat-list-item>
+                <mat-icon class="material-icons-outlined" mat-list-icon>assignment</mat-icon>
+                <a mat-list-item routerLink="/fornecedor/cadastrar">Cadastrar fornecedor  </a>
+            </mat-list-item>
+
+
+            <mat-list-item>
+            <mat-icon class="material-icons-outlined" mat-list-icon>list</mat-icon>
+                <a mat-list-item routerLink="/fornecedor/listar">Listar fornecedores </a>
+            </mat-list-item>
+
+            <!--PRODUTO-->
+            <mat-list-item>
+                <mat-icon class="material-icons-outlined" mat-list-icon>assignment</mat-icon>
+                    <a mat-list-item routerLink="/produto/cadastrar">Cadastrar produto  </a>
+            </mat-list-item>
+
+
+            <mat-list-item>
+                <mat-icon class="material-icons-outlined" mat-list-icon>list</mat-icon>
+                <a mat-list-item routerLink="/produto/listar">Listar produtos </a>
+            </mat-list-item>
+
+            <!--SAIDA-->
+            <mat-list-item>
+                <mat-icon class="material-icons-outlined" mat-list-icon>assignment</mat-icon>
+                <a mat-list-item routerLink="/saida/cadastrar">Cadastrar saida  </a>
+            </mat-list-item>
+
+
+            <mat-list-item>
+                <mat-icon class="material-icons-outlined" mat-list-icon>list</mat-icon>
+                <a mat-list-item routerLink="/saida/listar">Listar saidas </a>
+            </mat-list-item>
+                
+
+        </mat-nav-list>
+       </mat-sidenav>
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

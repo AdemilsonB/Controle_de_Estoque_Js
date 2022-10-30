@@ -1,0 +1,27 @@
+<mat-card>
+    <mat-card-title> Cadastrar Fornecedor</mat-card-title>
+    <mat-card-content>
+      
+        
+            <div>
+                <mat-form-field>
+                    <mat-label for="data">Fornecedor</mat-label>
+                    <input matInput placeholder="Nome da empresa" type="text" name="data" [(ngModel)]="empresa" />
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label for="data">Telefone</mat-label>
+                    <input matInput placeholder="Telefone" type="text" name="data" [(ngModel)]="telefone" />
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label for="data">Email</mat-label>
+                    <input matInput placeholder="digite o email do Fornecedor" type="text" name="data" [(ngModel)]="email" />
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label for="data">Endereço</mat-label>
+                    <input matInput placeholder="Endereço do fornecedor" type="text" name="data" [(ngModel)]="endereco" />
+                </mat-form-field>
+                <button mat-raised-button color="primary" (click)="cadastrar()">Cadastrar</button>
+            </div>
+        
+        </mat-card-content>
+    </mat-card>

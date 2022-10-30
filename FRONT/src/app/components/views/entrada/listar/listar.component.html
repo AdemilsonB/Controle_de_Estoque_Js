@@ -1,0 +1,39 @@
+<h1>Entradas cadastradas</h1>
+<div>
+
+<table mat-table [dataSource]="entradas" class="mat-elevation-z8">
+  
+    <ng-container matColumnDef="_id">
+      <th mat-header-cell *matHeaderCellDef> # </th>
+      <td mat-cell *matCellDef="let entrada"> {{entrada._id}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="data_compra">
+        <th mat-header-cell *matHeaderCellDef> data_compra </th>
+        <td mat-cell *matCellDef="let entrada"> {{entrada.data_compra}} </td>
+      </ng-container>
+
+    <ng-container matColumnDef="nome_produto">
+    <th mat-header-cell *matHeaderCellDef> Nome Produto</th>
+    <td mat-cell *matCellDef="let entrada"> {{entrada.nome_produto}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="fornecedor">
+        <th mat-header-cell *matHeaderCellDef> quantidade </th>
+        <td mat-cell *matCellDef="let entrada"> {{entrada.quantidade}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="categoria">
+        <th mat-header-cell *matHeaderCellDef> Custo_Unitario</th>
+        <td mat-cell *matCellDef="let entrada"> {{entrada.valor_unitario}} </td>
+    </ng-container>
+
+  <ng-container matColumnDef="deletar">
+      <th mat-header-cell *matHeaderCellDef> </th>
+      <td mat-cell *matCellDef="let entrada"> <button mat-raised-button color="primary" (click)="delete(entrada._id)">Deletar</button> </td>
+  </ng-container>
+         
+    <tr mat-header-row *matHeaderRowDef="listarColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: listarColumns;"></tr>
+  </table>
+</div>

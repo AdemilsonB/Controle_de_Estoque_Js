@@ -1,0 +1,28 @@
+<mat-card>
+    <mat-card-title> Cadastrar produto </mat-card-title>
+    <mat-card-content>
+
+
+            <div>
+                <mat-form-field>
+                    <mat-label for="data">Código do produto</mat-label>
+                    <input matInput placeholder="código do produto" type="text" name="data" [(ngModel)]="codigo_produto" />
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label for="data">Nome do produto</mat-label>
+                    <input matInput placeholder="Nome do produto" type="text" name="data" [(ngModel)]="nome_produto" />
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label for="data">Fornecedor</mat-label>
+                    <input matInput placeholder="Digite o id do fornecedor" type="text" name="data" [(ngModel)]="fornecedor" />
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label for="data">Categoria</mat-label>
+                    <input matInput placeholder="Categoria" type="text" name="data" [(ngModel)]="categoria" />
+                </mat-form-field>
+
+                <button mat-raised-button color="primary" (click)="cadastrar()">Cadastrar</button>
+            </div>
+
+        </mat-card-content>
+    </mat-card>

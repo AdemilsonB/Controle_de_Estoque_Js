@@ -1,0 +1,29 @@
+<mat-card>
+    <mat-card-title> Cadastrar Entrada </mat-card-title>
+    <mat-card-content>
+
+
+            <div>
+                <mat-form-field>
+                    <mat-label for="data">Data da Compra</mat-label>
+                    <input matInput placeholder="data da compra" type="text" name="data" [(ngModel)]="data_compra" />
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label for="data">Nome do produto</mat-label>
+                    <input matInput placeholder="Nome do produto" type="text" name="data" [(ngModel)]="produto" />
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label for="data">Quantidade</mat-label>
+                    <input matInput placeholder="Digite a quantidade" type="text" name="data" [(ngModel)]="quantidade" />
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label for="data">Custo Unitário</mat-label>
+                    <input matInput placeholder="Valor Unitario" type="text" name="data" [(ngModel)]="valor_unitario" />
+                </mat-form-field>
+
+                <button mat-raised-button color="primary" (click)="cadastrar()">Cadastrar</button>
+            </div>
+
+        </mat-card-content>
+    </mat-card>
+
