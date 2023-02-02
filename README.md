@@ -8,8 +8,8 @@ O sistema desenvolvido tem como objetivo representar um controle de estoque com 
 <h1>Tecnologias utilizadas:</h1>
 NodeJs<br>
 TypeScript<br>
-MongoDB<br>
 Angular<br>
+MongoDB<br>
 
 <h1>Back-End::</h1>
 O Controle de Estoque contém quatro classes, Entrada, Fornecedor, Produto e Saída. Para cada uma foi incrementada todas as funcionalidades existentes no Controle de Estoque, desta maneira ficou mais fácil identificar a arquitetura do projeto e códigos existentes, pois cada classe foi desenvolvida individualmente utilizando TypeScript e os dados são trabalhados em um Banco de Dados Não Relacional o MongoDB.
