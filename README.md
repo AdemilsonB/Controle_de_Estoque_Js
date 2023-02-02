@@ -6,6 +6,7 @@
 O sistema desenvolvido tem como objetivo representar um controle de estoque com todas as funcionalidades básicas, como, inserção, edição, exclusão, listagem completa e também listagem por Id. 
 
 <h1>Tecnologias utilizadas:</h1>
+NodeJs<br>
 TypeScript<br>
 MongoDB<br>
 Angular<br>
